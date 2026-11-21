@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Restaurant website architecture
+- Use TanStack Start content routes with a shared restaurant header and footer in the root shell; each leaf owns its metadata so pages are independently shareable.
+- Keep restaurant content and asset pointers in browser-safe modules and styling in global semantic tokens for consistent presentation.
+- Keep reservation enquiries client-only, schema-validated and explicitly unsent; the static demonstration must not collect data or imply a confirmed booking.
